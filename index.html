@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme 帽子生成器</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Fabric.js 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+</head>
+<body>
 
+    <div class="main-container">
+        <header>
+            <h1>MAKE BSC GREAT AGAIN</h1>
+            <p>给任何东西戴上黄帽子！</p>
+        </header>
+
+        <div class="controls">
+            <label for="imageLoader" class="upload-btn">1. 上传图片</label>
+            <input type="file" id="imageLoader" name="imageLoader" accept="image/png, image/jpeg"/>
+            <button id="downloadBtn" class="download-btn disabled" disabled>3. 下载Meme图</button>
+        </div>
+
+        <p class="tip">提示：上传图片后，直接拖动、缩放、旋转帽子！</p>
+        
+        <div id="canvas-container">
+            <canvas id="c"></canvas>
+        </div>
+
+        <footer>
+            <p>一个简单高效的 Meme 工具</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
